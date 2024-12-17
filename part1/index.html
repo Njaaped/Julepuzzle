@@ -1,83 +1,62 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family Puzzle</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            color: #333;
-            margin-top: 20px;
-        }
-
-        .puzzle-container {
-            margin: 50px auto;
-            max-width: 500px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        input, button {
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        button {
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        #result {
-            margin-top: 20px;
-            color: #d9534f;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Welcome to the Family Puzzle!</h1>
     <div class="puzzle-container">
-        <p>Hint: What is Mom's favorite flower? 🌹</p>
-        <input type="text" id="answer" placeholder="Type your answer here">
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="result"></p>
+        <p>Answer all 10 questions and submit:</p>
+        <form id="puzzleForm">
+            <ol>
+                <li>
+                    What is Mom's favorite flower? 
+                    <input type="text" id="answer1" placeholder="Type your answer here">
+                </li>
+                <li>
+                    In which city was Dad born? 
+                    <input type="text" id="answer2" placeholder="Type your answer here">
+                </li>
+                <li>
+                    What is Aunt Susan's middle name? 
+                    <input type="text" id="answer3" placeholder="Type your answer here">
+                </li>
+                <li>
+                    What is Grandpa's favorite hobby? 
+                    <input type="text" id="answer4" placeholder="Type your answer here">
+                </li>
+                <li>
+                    In which month is Grandma's birthday? 
+                    <input type="text" id="answer5" placeholder="Type your answer here">
+                </li>
+                <li>
+                    What was the name of our family's first pet? 
+                    <input type="text" id="answer6" placeholder="Type your answer here">
+                </li>
+                <li>
+                    Which country did Great-Grandpa immigrate from? 
+                    <input type="text" id="answer7" placeholder="Type your answer here">
+                </li>
+                <li>
+                    What is Uncle Tom's profession? 
+                    <input type="text" id="answer8" placeholder="Type your answer here">
+                </li>
+                <li>
+                    What is Cousin Sarah's favorite color? 
+                    <input type="text" id="answer9" placeholder="Type your answer here">
+                </li>
+                <li>
+                    Where did the family spend last Christmas? 
+                    <input type="text" id="answer10" placeholder="Type your answer here">
+                </li>
+            </ol>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="result"></div>
     </div>
-
-    <script>
-        function checkAnswer() {
-            const correctAnswer = "rose";
-            const userAnswer = document.getElementById("answer").value.toLowerCase();
-            const result = document.getElementById("result");
-
-            if (userAnswer === correctAnswer) {
-                result.style.color = "#4CAF50";
-                result.innerHTML = "🎉 Correct! Go check the living room table for the next clue!";
-            } else {
-                result.style.color = "#d9534f";
-                result.innerHTML = "❌ Nope, try again!";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
