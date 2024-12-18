@@ -1,3 +1,4 @@
 function startGame() {
-    alert("Eventyret begynner nå! Gjør dere klare til å løse gåtene sammen. 🎄✨");
+    // Redirect to /part1 subdirectory
+    window.location.href = "/part1";
 }
