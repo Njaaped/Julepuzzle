@@ -1,6 +1,7 @@
 # ==== Importing all necessary libraries
 from tkinter import *
 import random
+import time
 # ==== creating main class
 class Play_2048(Tk):
 
@@ -266,7 +267,7 @@ class Play_2048(Tk):
     def game_over(self):
         for i in range(0, 4):
             for j in range(0, 4):
-                if (self.game_board[i][j] == 2048):
+                if (self.game_board[i][j] == 1028):
                     self.game_won()
         for i in range(0, 4):
             for j in range(0, 4):
@@ -295,6 +296,10 @@ class Play_2048(Tk):
                                                                         outline="")
                 self.canvas.create_text((a + c) / 2, (b + d) / 2, font=("Arial", 36), fill="#494949",
                                         text=gameover[row][column])
+                
+        self.canvas.update()
+        time.sleep(5)
+        self.destroy()  # Close the Tkinter window
         return True
 
     # ==== check for game won
@@ -313,6 +318,10 @@ class Play_2048(Tk):
                                                                         outline="")
                 self.canvas.create_text((a + c) / 2, (b + d) / 2, font=("Arial", 36), fill="#494949",
                                         text=gameover[row][column])
+        
+        self.canvas.update()
+        time.sleep(5)
+        self.destroy() 
 
 if __name__ == "__main__":
     # ==== preparing main window

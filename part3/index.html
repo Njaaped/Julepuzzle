@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Puzzle Part 3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .spot-difference {
+            font-family: 'Georgia', serif;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+            background-color: #fdfdfd;
+            border-left: 4px solid #d4af37;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .images-container img {
+            border: 3px solid #8c8c8c;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .images-container img.selected {
+            border: 3px solid #2a8c86;
+        }
+
+        #result {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            padding: 10px;
+            color: #2a8c86;
+            background-color: #eef2f3;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spot the Differences!</h1>
+    <p class="spot-difference">
+        Dere har kommet så langt, men den neste utfordringen krever øynene deres! To bilder ligger foran dere, nesten identiske, men med fem små endringer. Finn alle endringene ved å klikke på dem. Når alle fem er funnet, vil dere motta deres neste ledetråd. Julenissens eventyr venter på dere!
+    </p>
+</body>
+</html>

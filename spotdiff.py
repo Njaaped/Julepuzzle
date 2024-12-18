@@ -116,7 +116,7 @@ if __name__ == "__main__":
     ]
 
     # Provide your actual image paths:
-    image_left_path = "image_left.png"
-    image_right_path = "image_right.png"
+    image_left_path = "/Users/njalpedersen/Documents/Dokumenter – njåls MacBook Pro/5. semester/jul/Julepuzzle/image_left.png"
+    image_right_path = "/Users/njalpedersen/Documents/Dokumenter – njåls MacBook Pro/5. semester/jul/Julepuzzle/image_right.png"
 
     draw_game(image_left_path, image_right_path, differences)

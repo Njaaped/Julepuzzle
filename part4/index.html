@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Puzzle Part 4</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .puzzle-container p strong {
+            display: block; /* Sørger for at teksten bryter som en blokk */
+            word-wrap: break-word; /* Bryt lange ord ved behov */
+            white-space: normal; /* Tillater linjeskift i teksten */
+            overflow-wrap: break-word; /* Ekstra støtte for linjebryting i eldre nettlesere */
+            max-width: 100%; /* Hindrer teksten i å strekke seg utenfor containeren */
+        }
+
+
+        .puzzle-container h2 {
+            color: #d4372a;
+        }
+
+        .puzzle-container input {
+            margin: 10px 0;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .puzzle-container button {
+            margin-top: 20px;
+            background-color: #2a8c86;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .puzzle-container button:hover {
+            background-color: #1e665e;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            color: #2a8c86;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Final Puzzle!</h1>
+    <p class="puzzle-container">
+        Gratulerer! Dere har kommet til den siste utfordringen. For å finne Julenissens siste gave må dere løse disse oppgavene. Klarer dere det?
+    </p>
+
+    <div class="puzzle-container">
+        <h2>1. Lureoppgave</h2>
+        <p>Oppgave: Tre personer har hver sitt favorittjulegodteri: pepperkaker, marsipan og sjokolade. </p>
+            <p>            Mamma sier: "Jeg elsker pepperkaker." Pappa sier: "Jeg liker ikke sjokolade." Tage sier: "Jeg elsker marsipan." Hvem snakker sant, og hvem lyver?
+            </p>
+            <p>Hint: Bare én av dem snakker sant.</p>
+        <input type="text" id="logicAnswer" placeholder="Skriv svaret her">
+    </div>
+
+    <div class="puzzle-container">
+        <h2>2. Dekryptering</h2>
+        <p>Oppgave: Dere får en kode som ser slik ut: NULZOGS WRJUNP,</p><p>og ledetråden er: "Roter hver bokstav tre trinn bakover i alfabetet for å finne meldingen."</p>
+        <input type="text" id="decryptionAnswer" placeholder="Skriv meldingen her">
+    </div>
+
+    <div class="puzzle-container">
+        <h2>3. Tallgåte</h2>
+        <p>Oppgave: "Hvis juletreet har 5 rader med grener, og hver rad har én fler gren enn den over, </p><p> mange grener har hele treet til sammen?"</p>
+        <input type="text" id="treeAnswer" placeholder="Skriv antall grener her">
+    </div>
+
+    <div class="puzzle-container">
+        <h2>4. Finn det skjulte ordet</h2>
+        <p>Bokstavene er: <strong>ATQRBBDMGPUQKUXUBADTCKHMQEMQMQMTZHXGDQNGXJZDBJGUJHFOEBFAJKMXXROKDNWWDFHVNPTJBRXAFAQSYYTNUCMMCXUPOLYBABEATZASBQIGALTLXASZTWQVKYFNZRQCBSXLHEVQMLVTTILKVMXDYIDGMMXCBXCIMSZPKVWXMXWBXJAMGIDIWUGVRZKCDJFFMULXKIVAUDXUISDZXJPLPIXQTQIIVBUTKTZLSUEYCOITYABKRCBILEIJXFPOWEDUIYTFHDNVUILWYAXIPTPKKYWVUDWTXPPQRASSWAATZMCDCPTBPQZGKAVCULJORLEWSBDFHWMHVHKTNEEAUEDYJLVWDZBTDUDGNJAXWPNSJXSTJPJQAFYSSISAIPDYBOGAAGMSPJUDNVOWXOIMGVNTEZELGZIRTMQEJUBIWAPGHMZGCTVHGWINZAWXWLCXGLTHBNCLWAKELYQGVVGFUEIQLIPSBQKTRYJSXZCSOUEZEVJJVIMPERVPUKKTXBTJUSMJRRVRVIUNMEQJTIVFHCQSRETEXEJJAXXQIYZBTVENNQKIYQGJPEUKMVTSJCJTKVMYVRPEURYIVTRJSEZLAJGGXQJNVHPAVPANOFAAFNTEYTLEUTIQCYBAFGREXVNJIUJOUGWNJBDMXOAIUJULENISSENQRGCZWXFTLHRDHBQNROGUFIAZLUWLATRQCGTMFKROKHRLLQMCLLGQAHYGFHKGUZALYVCAKOKNNWMPEDTVOAIDZHJWIJENEJELJOMMOJXVVIAEWZWGKBXUFFBEYBZKHJRDXVRHMRJMZYYKORDPTQQTIZACYZJAVSKPPXTEBUREBXYLETCKPWUORVZAHHPVHSRSFFPVNFNMCVIMLAAORRUUWLSTBGMYXDKJKGZHBTUORPIQEDGJTEOFVERQKZUFZJFNBNYTRXDPRLGEOAPPSQXAQOGNWWJNNWFAWIWUQSXMSYXPEMIRUINQANCWGBCGCYIHYKOUDNDCUOQQ</strong>. Hva er det skjulte ordet?</p>
+        <input type="text" id="hiddenWordAnswer" placeholder="Skriv ordet her">
+    </div>
+
+    <div class="puzzle-container">
+        <h2>5. Kombinasjonslås</h2>
+        <p>Oppgave: "Julenissen har låst neste ledetråd bak en kombinasjonslås. Koden er fire tall, og følgende ledetråd gjelder:"</p>
+            <p>Det første tallet er antall dager i desember frem til julaften.</p>
+           <p> Det andre tallet er antall reinsdyr (inkludert Rudolf).</p>
+            <p>Det tredje tallet er antall lys på et vanlig adventsstake.</p>
+            <p>Det siste tallet er antall bokstaver i ordet 'JUL'."</p>
+        <input type="text" id="combinationAnswer" placeholder="Skriv koden her">
+    </div>
+
+    <button onclick="checkAnswers()">Sjekk svarene</button>
+    <div id="result"></div>
+
+    <script>
+        function checkAnswers() {
+            const logicAnswer = document.getElementById('logicAnswer').value.trim().toLowerCase();
+            const decryptionAnswer = document.getElementById('decryptionAnswer').value.trim().toLowerCase();
+            const treeAnswer = document.getElementById('treeAnswer').value.trim();
+            const hiddenWordAnswer = document.getElementById('hiddenWordAnswer').value.trim().toLowerCase();
+            const combinationAnswer = document.getElementById('combinationAnswer').value.trim();
+
+            let correct = 0;
+
+            if (logicAnswer === 'pappa') correct++;
+            if (decryptionAnswer === 'julekos') correct++;
+            if (treeAnswer === '15') correct++;
+            if (hiddenWordAnswer === 'grytemagi') correct++;
+            if (combinationAnswer === '2414') correct++;
+
+            if (correct === 5) {
+                document.getElementById('result').innerText = 'Gratulerer! Dere har løst alle oppgavene og funnet Julenissens gave!';
+            } else {
+                document.getElementById('result').innerText = `Dere har ${correct} riktige svar. Prøv igjen!`;
+            }
+        }
+    </script>
+</body>
+</html>

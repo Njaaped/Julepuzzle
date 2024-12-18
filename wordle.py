@@ -1,13 +1,13 @@
 import pygame
 import sys
 from collections import Counter
-
+import random
 pygame.init()
 
 # Game constants
 WORD_LENGTH = 5
 MAX_ATTEMPTS = 6
-SECRET_WORD = "nisse"  # A Norwegian Christmas-related word
+SECRET_WORD = random.choice(["nisse"])  # A Norwegian Christmas-related word
 FONT_SIZE = 40
 LETTER_SPACING = 10
 TOP_MARGIN = 100

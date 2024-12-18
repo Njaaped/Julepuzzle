@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mohaha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .game-selection {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            color: #333;
+            background-color: #eef2f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 2px solid #8c8c8c;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .game-selection h2 {
+            color: #2a8c86;
+        }
+
+        .game-selection label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .game-selection button {
+            margin-top: 20px;
+            background-color: #2a8c86;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .game-selection button:hover {
+            background-color: #1e665e;
+        }
+
+        .story-paragraph {
+            font-family: 'Georgia', serif;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+            background-color: #fdfdfd;
+            border-left: 4px solid #d4af37;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Er dere klare HoHoHo🎅🏼</h1>
+    <p class="story-paragraph">
+        Etter at dere løste de første spørsmålene, fikk dere et nytt brev. Det var Julenissen igjen! Brevet sa: "Nå må dere samarbeide og bruke deres unike styrker! Hvert medlem må velge et spill å spille og vinne det. Bare når alle tre spillene er vunnet, kan dere gå videre i eventyret."
+    </p>
+    <div class="game-selection">
+        <h2>Velg hvem som gjør hvert spill:</h2>
+        <form id="gameForm">
+            <label for="game1">2048 - Velg spiller:</label>
+            <select id="game1">
+                <option value="mom">Mamma</option>
+                <option value="dad">Pappa</option>
+                <option value="tage">Tage</option>
+            </select>
+
+            <label for="game2">Sudoku - Velg spiller:</label>
+            <select id="game2">
+                <option value="mom">Mamma</option>
+                <option value="dad">Pappa</option>
+                <option value="tage">Tage</option>
+            </select>
+
+            <label for="game3">Wordle - Velg spiller:</label>
+            <select id="game3">
+                <option value="mom">Mamma</option>
+                <option value="dad">Pappa</option>
+                <option value="tage">Tage</option>
+            </select>
+
+            <button type="button" onclick="assignGames()">Bekreft valg</button>
+        </form>
+    </div>
+
+    <script>
+        function assignGames() {
+            const game1 = document.getElementById('game1').value;
+            const game2 = document.getElementById('game2').value;
+            const game3 = document.getElementById('game3').value;
+
+            if (new Set([game1, game2, game3]).size < 3) {
+                alert('Hver spiller må velge et unikt spill!');
+            } else {
+                alert(`Spillene er valgt!\n2048: ${game1}\nSudoku: ${game2}\nWordle: ${game3}. Lykke til!`);
+            }
+        }
+    </script>
+</body>
+</html>

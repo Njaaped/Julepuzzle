@@ -2,16 +2,16 @@ function checkAnswers() {
     // Array of correct answers (make sure these match your questions)
     // All answers here are lowercase for easy comparison
     const correctAnswers = [
-        "rose",       // Q1: Mom's favorite flower
-        "chicago",    // Q2: Dad's birthplace example
-        "marie",      // Q3: Aunt Susan's middle name example
-        "fishing",    // Q4: Grandpa's favorite hobby example
-        "july",       // Q5: Grandma's birthday month example
-        "buddy",      // Q6: Family's first pet example
-        "italy",      // Q7: Country immigrated from example
-        "doctor",     // Q8: Uncle Tom's profession example
-        "blue",       // Q9: Cousin Sarah's favorite color example
-        "cabin"       // Q10: Where last Christmas was spent example
+        "wollfs gate 14",       // Q1: Mom's favorite flower
+        "gran canaria",    // Q2: Dad's birthplace example
+        "18",      // Q3: Aunt Susan's middle name example
+        "d",    // Q4: Grandpa's favorite hobby example
+        "e",       // Q5: Grandma's birthday month example
+        "f",      // Q6: Family's first pet example
+        "g",      // Q7: Country immigrated from example
+        "h",     // Q8: Uncle Tom's profession example
+        "i",       // Q9: Cousin Sarah's favorite color example
+        "j"       // Q10: Where last Christmas was spent example
     ];
 
     const resultDiv = document.getElementById("result");
@@ -36,7 +36,7 @@ function checkAnswers() {
     if (allCorrect) {
         resultDiv.classList.remove('incorrect');
         resultDiv.classList.add('correct');
-        resultDiv.innerHTML = "🎉 All answers are correct! Proceed to the next step!";
+        resultDiv.innerHTML = "🎉 gratulerer, helt riktiiiiig! Tage, sjekk ut denne: youtubelink, ";
     } else {
         resultDiv.classList.remove('correct');
         resultDiv.classList.add('incorrect');
