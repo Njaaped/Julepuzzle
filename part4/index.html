@@ -58,7 +58,7 @@
     <div class="puzzle-container">
         <h2>1. Lureoppgave</h2>
         <p>Oppgave: Tre personer har hver sitt favorittjulegodteri: pepperkaker, marsipan og sjokolade. </p>
-            <p>            Mamma sier: "Jeg elsker pepperkaker." Pappa sier: "Jeg liker ikke sjokolade." Tage sier: "Jeg elsker marsipan." Hvem snakker sant, og hvem lyver?
+            <p>            Mamma sier: "Jeg elsker pepperkaker." Pappa sier: "Jeg liker ikke sjokolade." Tage sier: "Jeg elsker marsipan." Hvem snakker sant?
             </p>
             <p>Hint: Bare én av dem snakker sant.</p>
         <input type="text" id="logicAnswer" placeholder="Skriv svaret her">
@@ -84,7 +84,7 @@
 
     <div class="puzzle-container">
         <h2>5. Kombinasjonslås</h2>
-        <p>Oppgave: "Julenissen har låst neste ledetråd bak en kombinasjonslås. Koden er fire tall, og følgende ledetråd gjelder:"</p>
+        <p>Oppgave: "Julenissen har låst neste ledetråd bak en kombinasjonslås. Koden er fem tall, og følgende ledetråd gjelder:"</p>
             <p>Det første tallet er antall dager i desember frem til julaften.</p>
            <p> Det andre tallet er antall reinsdyr (inkludert Rudolf).</p>
             <p>Det tredje tallet er antall lys på et vanlig adventsstake.</p>
@@ -106,10 +106,10 @@
             let correct = 0;
 
             if (logicAnswer === 'pappa') correct++;
-            if (decryptionAnswer === 'julekos') correct++;
+            if (decryptionAnswer === 'julekos eventyr') correct++;
             if (treeAnswer === '15') correct++;
-            if (hiddenWordAnswer === 'grytemagi') correct++;
-            if (combinationAnswer === '2414') correct++;
+            if (hiddenWordAnswer === 'julenissen') correct++;
+            if (combinationAnswer === '24943') correct++;
 
             if (correct === 5) {
                 document.getElementById('result').innerText = 'Gratulerer! Dere har løst alle oppgavene og funnet Julenissens gave!';
