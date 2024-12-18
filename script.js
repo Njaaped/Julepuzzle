@@ -1,4 +1,4 @@
 function startGame() {
     // Redirect to /part1 subdirectory
-    window.location.href = "/part1";
+    window.location.href = "/Julepuzzle/part1";
 }

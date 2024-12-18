@@ -5,9 +5,9 @@ function checkAnswers() {
         "wollfs gate 14",       // Q1: Mom's favorite flower
         "gran canaria",    // Q2: Dad's birthplace example
         "18",      // Q3: Aunt Susan's middle name example
-        "d",    // Q4: Grandpa's favorite hobby example
-        "e",       // Q5: Grandma's birthday month example
-        "f",      // Q6: Family's first pet example
+        "152",    // Q4: Grandpa's favorite hobby example
+        "1985/1986",       // Q5: Grandma's birthday month example
+        "usikker",      // Q6: Family's first pet example
         "g",      // Q7: Country immigrated from example
         "h",     // Q8: Uncle Tom's profession example
         "i",       // Q9: Cousin Sarah's favorite color example
