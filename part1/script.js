@@ -7,11 +7,11 @@ function checkAnswers() {
         "18",      // Q3: Aunt Susan's middle name example
         "152",    // Q4: Grandpa's favorite hobby example
         "1985/1986",       // Q5: Grandma's birthday month example
-        "usikker",      // Q6: Family's first pet example
-        "g",      // Q7: Country immigrated from example
-        "h",     // Q8: Uncle Tom's profession example
-        "i",       // Q9: Cousin Sarah's favorite color example
-        "j"       // Q10: Where last Christmas was spent example
+        "06/1997",      // Q6: Family's first pet example
+        "03/02",      // Q7: Country immigrated from example
+        "04/1972",     // Q8: Uncle Tom's profession example
+        "03/1972",       // Q9: Cousin Sarah's favorite color example
+        "våt"       // Q10: Where last Christmas was spent example
     ];
 
     const resultDiv = document.getElementById("result");

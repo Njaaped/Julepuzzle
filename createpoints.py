@@ -57,7 +57,7 @@ def normalize_points(points, image_path):
 
 if __name__ == "__main__":
     # Path to the image where differences will be marked
-    image_right_path = "image_right.png"
+    image_right_path = "right_image3.png"
     
     # Collect points where the user clicks
     clicks = mark_differences(image_right_path)

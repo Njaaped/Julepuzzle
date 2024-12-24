@@ -115,8 +115,44 @@ if __name__ == "__main__":
         (0.0513, 0.05793, 0.04)
     ]
 
+    # (np.float64(0.8780360151773882), np.float64(0.09728063547113121))
+    # (np.float64(0.14341992547101168), np.float64(0.8056432496664934))
+    # (np.float64(0.04960531661240515), np.float64(0.3929587802357132))
+    # (np.float64(0.8674354944024044), np.float64(0.34815906133198865))
+    # (np.float64(0.6458846102052432), np.float64(0.41456805641280386))
+
+    differences2 = [
+        (0.8780, 0.0972, 0.04),
+        (0.1434, 0.8056, 0.04),
+        (0.0496, 0.3929, 0.04),
+        (0.8674, 0.3481, 0.04),
+        (0.6458, 0.4145, 0.04)
+    ]
+
+    # (np.float64(0.8683947839324824), np.float64(0.7705744885422786))
+    # (np.float64(0.5518999385716575), np.float64(0.5162789558962305))
+    # (np.float64(0.8730339591902143), np.float64(0.09909682531203806))
+    # (np.float64(0.7183947839324824), np.float64(0.07091813115396242))
+    # (np.float64(0.8323123097056783), np.float64(0.9781346259993234))
+
+    differences3 = [
+        (0.8683, 0.7705, 0.04),
+        (0.55189, 0.5162, 0.04),
+        (0.8730, 0.09909, 0.04),
+        (0.71839, 0.070918, 0.04),
+        (0.8323, 0.9781, 0.04)
+    ]
+
     # Provide your actual image paths:
     image_left_path = "/Users/njalpedersen/Documents/Dokumenter – njåls MacBook Pro/5. semester/jul/Julepuzzle/image_left.png"
     image_right_path = "/Users/njalpedersen/Documents/Dokumenter – njåls MacBook Pro/5. semester/jul/Julepuzzle/image_right.png"
 
+    image_left_path2 = "/Users/njalpedersen/Documents/Dokumenter – njåls MacBook Pro/5. semester/jul/Julepuzzle/right_image2.png"
+    image_right_path2 = "/Users/njalpedersen/Documents/Dokumenter – njåls MacBook Pro/5. semester/jul/Julepuzzle/left_image2.png"
+
+    image_left_path3 = "/Users/njalpedersen/Documents/Dokumenter – njåls MacBook Pro/5. semester/jul/Julepuzzle/left_image3.png"
+    image_right_path3 = "/Users/njalpedersen/Documents/Dokumenter – njåls MacBook Pro/5. semester/jul/Julepuzzle/right_image3.png"
+
     draw_game(image_left_path, image_right_path, differences)
+    draw_game(image_left_path2, image_right_path2, differences2)
+    draw_game(image_left_path3, image_right_path3, differences3)

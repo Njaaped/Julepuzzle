@@ -5,7 +5,7 @@ from nltk.corpus import words
 norwegian_word_list = set()  # Replace this with a proper set of Norwegian words
 # Example: norwegian_word_list = {"jul", "nisse", "det", "og", "er", ...}
 
-def generate_norwegian_letters_with_word(word="JULENISSEN", n=1000):
+def generate_norwegian_letters_with_word(word="CRAZY", n=200):
     norwegian_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     remaining_length = n - len(word)
     random_letters = []
